@@ -5,21 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Salmon Landing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
 </head>
 <body>
+  <!-- navbar here -->
+  <nav class="navbar navbar-expand-lg navSpecial navExtra">
+    <a class="navbar-brand" href="#"><img src="https://files.slack.com/files-pri/T02CQ4EN4-FENS7PQBX/download/superfoodsrx-logo_svg.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar here ends -->
+  
   <div id="intro" class="header-container full-screen">
     <header class="wrapper">
-      <h1 class="title">Intro Page</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos incidunt eum excepturi aliquid veritatis, rerum
-        maxime similique quis itaque quia expedita ab repellendus natus ex soluta, sed minima ea facere.</p>
+    <iframe src="https://giphy.com/embed/l0NwzrTJPO0y3owOQ" width="500" height="500" frameBorder="0" class="giphy-embed"
+      allowFullScreen></iframe>
+    <!-- <p><a href="https://giphy.com/gifs/l0NwzrTJPO0y3owOQ">via GIPHY</a></p> -->
     </header>
-    <span class="scroll-hint"> <a href="#slide01" class="button">Scroll Down</a></span>
   </div>
-  <nav>
+  <nav id="navLeft">
     <ul>
       <li><a href="#intro"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
       <li><a href="#slide01"><span class="nav-dot"></span><span class="nav-label">Slide One</span></a></li>
@@ -34,6 +71,7 @@
         <div class="wrapper">
           <header>
             <h1 class="slideInUp">ScrollMagic Controller 1</h1>
+            
           </header>
           <sesction>
             <h2 class="slideInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae dignissimos illo
@@ -49,27 +87,48 @@
             <h1 class="slideInUp">ScrollMagic Controller 2</h1>
           </header>
           <sesction>
-            <h2 class="slideInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae dignissimos illo
-              nostrum voluptate inventore eligendi dicta, vitae recusandae, ipsum perspiciatis aliquid soluta, nihil odit
-              necessitatibus voluptatum officiis nemo quo.</h2>
-            <p class="slideInUp"><a href="#slide03" class="button">Next</a></p>
+            <div id="scrollmagic3" class='container cards'>
+            
+              <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://files.slack.com/files-pri/T02CQ4EN4-FENHBDEHZ/recipe_2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+              </div>
+            
+              <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://files.slack.com/files-pri/T02CQ4EN4-FEMU3749E/recipe_3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                </div>
+              </div>
+            
+              <div class="card col-3" style="width: 18rem;">
+                <img class="card-img-top" src="https://slack-imgs.com/?c=1&url=https%3A%2F%2F31p86334w2bvkz0249eyr0cr-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2017%2F07%2Fsalmon-on-the-grill.jpg" alt="Card image cap">
+                
+              </div>
+            </div>
           </sesction>
         </div>
       </article>
       <article id="slide03" class="slide full-screen">
-        <div class="wrapper">
-          <header>
-            <h1 class="slideInUp">ScrollMagic Controller 3</h1>
-          </header>
-          <sesction>
-            <h2 class="slideInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et molestiae dignissimos illo
-              nostrum voluptate inventore eligendi dicta, vitae recusandae, ipsum perspiciatis aliquid soluta, nihil odit
-              necessitatibus voluptatum officiis nemo quo.</h2>
-            <p class="slideInUp"><a href="#slide04" class="button">Next</a></p>
-          </sesction>
+        <div class="card text-center">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
         </div>
       </article>
-      <article id="slide04" class="slide full-screen">
+      <!-- <article id="slide04" class="slide full-screen">
         <div class="wrapper">
           <header>
             <h1 class="slideInUp">ScrollMagic Controller 4</h1>
@@ -81,24 +140,7 @@
             <p class="slideInUp"><a href="#intro" class="button">Next</a></p>
           </sesction>
         </div>
-      </article>
-      <footer>
-          <p>
-              Contact us:<br/>
-            <a href="https://twitter.com/oraking">
-                <i class="fab fa-twitter"></i>
-              </a>  
-              <a href="https://www.facebook.com/orakingsalmon/">
-                  <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/orakingsalmon/">
-                  <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.instagram.com/orakingsalmon/">
-                <i class="fab fa-github"></i>
-            </a>
-          </p>
-          </footer>
+      </article> -->
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
